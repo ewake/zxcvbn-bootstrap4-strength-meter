@@ -1,23 +1,23 @@
-# zxcvbn bootstrap password strength meter
+# zxcvbn bootstrap 4 password strength meter
 
-A password strength meter using [zxcvbn](https://github.com/dropbox/zxcvbn) and [Bootstrap](http://getbootstrap.com/).
+A password strength meter using [zxcvbn](https://github.com/dropbox/zxcvbn) and [Bootstrap 4](http://getbootstrap.com/).
 
-Hooks the password strength library zxcvbn up to a Boostrap progress bar, packaged in a JQuery plugin.
+Hooks the password strength library zxcvbn up to a Boostrap 4 progress bar, packaged in a JQuery plugin.
 
-[Demo](http://martinw.net/zxcvbn-bootstrap-strength-meter)
+[Demo](https://zxcvbn-bootstrap4-strength-meter.netlify.com/)
 
 [![Image of demo](screenshot.PNG)](http://martinw.net/zxcvbn-bootstrap-strength-meter)
 
 ##Example usage
 
 ```javascript
-
 <script type="text/javascript">
 	$(document).ready(function () {
 		$("#StrengthProgressBar").zxcvbnProgressBar({ passwordInput: "#Password" });
 	});
 </script>
 ```
+
 ```html
 <div class="form-group">
 	<label for="Password">Password</label>
@@ -29,6 +29,7 @@ Hooks the password strength library zxcvbn up to a Boostrap progress bar, packag
 ```
 
 Additional options - userInputs, ratings
+
 ```javascript
 <script type="text/javascript">
 	$(document).ready(function () {

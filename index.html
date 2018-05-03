@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>martinw.net | zxcvbn bootstrap password strength meter - Demo</title>
 
-    <!-- Bootstrap stylesheet -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<!-- Bootstrap stylesheet -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-  </head>
-  <body>
+</head>
+
+<body>
 	<div class="container">
-		<h1>zxcvbn bootstrap password strength meter</h1>
+		<h1>zxcvbn bootstrap 4 password strength meter</h1>
 		<p>
-			A password strength meter using <a href="https://github.com/dropbox/zxcvbn">zxcvbn</a> and <a href="http://getbootstrap.com/">Bootstrap</a>.
+			A password strength meter using
+			<a href="https://github.com/dropbox/zxcvbn">zxcvbn</a> and
+			<a href="http://getbootstrap.com/">Bootstrap 4</a>.
 		</p>
 		<p>
-			Hooks the password strength library zxcvbn up to a Boostrap progress bar, packaged in a JQuery plugin.
+			Hooks the password strength library zxcvbn up to a Boostrap 4 progress bar, packaged in a JQuery plugin.
 		</p>
 		<p>
 			<code>
@@ -25,44 +29,52 @@
 			</code>
 		</p>
 		<p>
-			Source code available on <a href="https://github.com/martinwnet/zxcbn-bootstrap-strength-meter/">GitHub</a>
+			Source code available on
+			<a href="https://github.com/ezrx/zxcvbn-bootstrap4-strength-meter">GitHub</a>
 		</p>
 		<div class="well">
 			<h2>Demo</h2>
-		  <div class="form-group">
-			<label for="Password">Password</label>
-			<input type="password" class="form-control" id="Password" placeholder="Password">
-		  </div>
+			<div class="form-group">
+				<label for="Password">Password</label>
+				<input type="password" class="form-control" id="Password" placeholder="Password">
+			</div>
 			<div class="progress">
 				<div id="StrengthProgressBar" class="progress-bar"></div>
 			</div>
-		 </div>
-		 <p>
-			<em>"Good passwords are hard to guess. Use uncommon words or inside jokes, non-standard uPPercasing, creative spelllling, and non-obvious numbers and symbols"</em>
-		 </p>
-		 <p>
-			zxcvbn is a password strength library developed by Dropbox, read more about it on their tech blog: <br />
+		</div>
+		<p>
+			<em>"Good passwords are hard to guess. Use uncommon words or inside jokes, non-standard uPPercasing, creative spelllling,
+				and non-obvious numbers and symbols"</em>
+		</p>
+		<p>
+			zxcvbn is a password strength library developed by Dropbox, read more about it on their tech blog:
+			<br />
 			<a href="https://tech.dropbox.com/2012/04/zxcvbn-realistic-password-strength-estimation/">https://tech.dropbox.com/2012/04/zxcvbn-realistic-password-strength-estimation/</a>
-		 </p>
-		 <p>
+		</p>
+		<p>
 			And of course, the xkcd comic:
-		 </p>
-		 <a href="https://xkcd.com/936/"><img src="password_strength.png"></a>
+		</p>
+		<a href="https://xkcd.com/936/">
+			<img src="password_strength.png">
+		</a>
 		<!--JQuery-->
-		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 		<!--Boostrap-->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 		<!-- zxcvbn -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/1.0/zxcvbn.min.js"></script>
 		<!--strength meter-->
-		<script type="text/javascript" src="zxcvbn-bootstrap-strength-meter.js"></script>
+		<script type="text/javascript" src="zxcvbn-bootstrap4-strength-meter.js"></script>
 		<!-- Hook up strength bar on page load-->
 		<script type="text/javascript">
-			$(document).ready(function()
-			{
-				$("#StrengthProgressBar").zxcvbnProgressBar({ passwordInput: "#Password" });
+			$(document).ready(function () {
+				$("#StrengthProgressBar").zxcvbnProgressBar({
+					passwordInput: "#Password"
+				});
 			});
 		</script>
 	</div>
-  </body>
+</body>
+
 </html>
