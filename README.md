@@ -1,6 +1,6 @@
 # zxcvbn bootstrap 4 password strength meter
 
-A password strength meter using [zxcvbn](https://github.com/dropbox/zxcvbn) and [Bootstrap 4](http://getbootstrap.com/).
+A password strength meter by [martinwnet](http://martinw.net/) using [zxcvbn](https://github.com/dropbox/zxcvbn) and [Bootstrap 4](http://getbootstrap.com/).
 
 Hooks the password strength library zxcvbn up to a Boostrap 4 progress bar, packaged in a JQuery plugin.
 
