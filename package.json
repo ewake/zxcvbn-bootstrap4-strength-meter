@@ -1,0 +1,19 @@
+{
+  "name": "zxcvbn-bootstrap4-strength-meter",
+  "version": "1.0.0",
+  "description": "A password strength meter using zxcvbn and Bootstrap 4.",
+  "main": "zxcvbn-bootstrap4-strength-meter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewake/zxcvbn-bootstrap4-strength-meter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ewake/zxcvbn-bootstrap4-strength-meter/issues"
+  },
+  "homepage": "https://github.com/ewake/zxcvbn-bootstrap4-strength-meter#readme"
+}
